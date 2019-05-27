@@ -1,10 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>events</title>
+      <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
+	<title> Omega Foum</title>
+ <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fixed.css">
+   <!--- Script Source Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <!--- End of Script Source Files -->
 </head>
 <body>
-<h1> first event</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+
+            <!-- Fluid width widget -->
+    	    <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-calendar"></span> 
+                        Calendar Events
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="media-list">
+                        <li class="media">
+                            <div class="media-left">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            Mar
+                                        </span>
+                                    </div>
+                                    <div class="panel-body day text-danger">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Pulvinar Mauris Eu
+                                </h4>
+                                <p>
+                                    Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            Jan
+                                        </span>
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Aenean Consectetur Ultricies
+                                </h4>
+                                <p>
+                                    Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong all-caps">
+                                            Dec
+                                        </span>
+                                    </div>
+                                    <div class="panel-body text-danger day">
+                                        8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Praesent Tincidunt
+                                </h4>
+                                <p>
+                                    Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-default btn-block">More Events »</a>
+                </div>
+            </div>
+            <!-- End fluid width widget -->
+
+		</div>
+	</div>
+</div>
+<style>
+    .panel.date {
+    margin: 0px;
+    width: 60px;
+    text-align: center;
+}
+
+.panel.date .month {
+    padding: 2px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 3px 0px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+</style>
 </body>
 </html>

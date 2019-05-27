@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
+{% extends "base.html" %}
+{% load static %}
+
+{% block base_head %}
 	<title> Omega Foum</title>
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/fixed.css">
-   <!--- Script Source Files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
    <!--- End of Script Source Files -->
+{% endblock %}
 
-</head>
 
+{% block content %}
 <body data-spy="scroll" data-target="#navbarResponsive" data-offset="56">
 <div class="header_area">
     <div class="top_menu d-lg-block d-none">
@@ -58,87 +51,7 @@
     <!--container-->
     </div>
 </div>
-<!--- start home section -->
 
-<div id="home"> </div>
-<!--- navigation-->
-<nav class="navbar navbar-expand-md navbar-expand-sm navbar-light bg-light sticky-top" data-toggle="affix">
-    <a class="navbar-brand" href="#"> <div class="navbar-brand-name"><img src="img/logo.png" ></div>  Omega Foum</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="#navbarResponsive" aria-expanded='false' aria-label='Toggle Navigation'>
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about us">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="products.html">Products</a>
-                <ul class="dropdown-menu">
-                    <ul class="cl-menu">
-        <li id='panel'>
-			<a href="#">Sandwitch panel</a>
-			<ul>
-				<li>
-					<a href="#">wall panel</a>
-				</li>
-				<li>
-					<a href="#">roof panel</a>
-				</li>
-			</ul>
-        </li>
-        <li id='rooms'>
-			<a href="#">cold rooms</a>
-			<ul>
-				<li>
-					<a href="#">CHILLER</a>
-				</li>
-				<li>
-					<a href="#">FREEZER</a>
-				</li>
-                <li>
-					<a href="#">DEEP FREEZER & TUNNEL</a>
-				</li>
-			</ul>
-        </li>
-		<li id='doors'>
-			<a href="#">insulted doors</a>
-			<ul>
-				<li>
-					<a href="#">HINGED DOORS</a>
-				</li>
-				<li>
-					<a href="#">SLIDING DOORS</a>
-				</li>
-			</ul>
-        </li>
-		 <li>
-			<a href="#">CARAVANS AND MOBILE BUILDING </a>
-		</li>
-		 <li>
-			<a href="#">CORRUGATED STEEL SHEETS </a>
-		</li>
-	</ul>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="events.html">events</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#العربية">العربية</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!--- end navigation-->
 <!-- start landing page-->
 <div class="landing">
     <div class="home-wrap">
@@ -242,7 +155,7 @@
             </div>
             <div class="col-md-8">
                 <div class="feature">
-                    <img src="img/cool.jpg " alt="" >
+                    <img src="{& static 'mg/cool.jpg' &} " alt="" >
                 </div>
 
             </div>
@@ -306,19 +219,19 @@
         <div class="row text-center">
      <div class="col-md-2">
                 <div class="features">
-                    <img src="img/ragab.png " alt="ragab sons" >
+                    <img src="{& static 'img/ragab.png' &} " alt="ragab sons" >
                 </div>
 
             </div>
         <div class="col-md-2">
                 <div class="features">
-                    <img src="img/ragab.png " alt="ragab sons" >
+                    <img src="{& static 'img/ragab.png' &} " alt="ragab sons" >
                 </div>
 
             </div>
         <div class="col-md-2">
                 <div class="features">
-                    <img src="img/ragab.png " alt="ragab sons" >
+                    <img src="{& static 'img/ragab.png' &} " alt="ragab sons" >
                 </div>
 
             </div>
@@ -562,11 +475,8 @@
 
 
 
-<!--- Script Source Files -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.countTo.js"></script>
-  <script src="js/script.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<!--- End of Script Source Files -->
+
+</div>
+</div>
 </body>
-</html>
+{% endblock %}

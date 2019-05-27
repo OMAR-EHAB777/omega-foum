@@ -1,0 +1,87 @@
+{% url 'home' as home_url %}
+{% url 'about' as about_url %}
+{% url 'products:list' as product_list_url %}
+{% url 'events' as events_url %}
+{% url 'contact' as contact_url %}
+{% url 'arabic' as arabic_url %}
+<!--- start home section -->
+
+<div id="home"> </div>
+<!--- navigation-->
+<nav class="navbar navbar-expand-md navbar-expand-sm navbar-light bg-light sticky-top" data-toggle="affix">
+    <a class="navbar-brand" href="{{ home_url }}"> <div class="navbar-brand-name"><img src="img/logo.png" ></div>  Omega Foum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="#navbarResponsive" aria-expanded='false' aria-label='Toggle Navigation'>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ home_url }}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ about_url }}">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="{{ product_list_url }}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="products.html">Products</a>
+                <ul class="dropdown-menu">
+                    <ul class="cl-menu">
+        <li id='panel'>
+			<a href="#">Sandwitch panel</a>
+			<ul>
+				<li>
+					<a href="#">wall panel</a>
+				</li>
+				<li>
+					<a href="#">roof panel</a>
+				</li>
+			</ul>
+        </li>
+        <li id='rooms'>
+			<a href="#">cold rooms</a>
+			<ul>
+				<li>
+					<a href="#">CHILLER</a>
+				</li>
+				<li>
+					<a href="#">FREEZER</a>
+				</li>
+                <li>
+					<a href="#">DEEP FREEZER & TUNNEL</a>
+				</li>
+			</ul>
+        </li>
+		<li id='doors'>
+			<a href="#">insulted doors</a>
+			<ul>
+				<li>
+					<a href="#">HINGED DOORS</a>
+				</li>
+				<li>
+					<a href="#">SLIDING DOORS</a>
+				</li>
+			</ul>
+        </li>
+		 <li>
+			<a href="#">CARAVANS AND MOBILE BUILDING </a>
+		</li>
+		 <li>
+			<a href="#">CORRUGATED STEEL SHEETS </a>
+		</li>
+	</ul>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ events_url }}">events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#{{ contact_url }}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ arabic_url }}">العربية</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--- end navigation-->

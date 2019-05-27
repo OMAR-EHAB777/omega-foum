@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .view import home_page
+from django.conf.urls.static import static
+from django.conf import settings
+from .view import home_page , events_page , product_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'', home_page)
+    path(r'', home_page),
+    path('events/',events_page, name='events'),
+    path('products/', product_page, name='products'),
 ]
+if settings.DEBUG:
+    # test mode
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
