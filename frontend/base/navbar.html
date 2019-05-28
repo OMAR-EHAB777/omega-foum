@@ -1,6 +1,7 @@
+{% load static %}
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
-{% url 'products:list' as product_list_url %}
+{% url 'products' as product_list_url %}
 {% url 'events' as events_url %}
 {% url 'contact' as contact_url %}
 {% url 'arabic' as arabic_url %}
@@ -8,8 +9,49 @@
 
 <div id="home"> </div>
 <!--- navigation-->
+<div class="header_area">
+    <div class="top_menu d-lg-block d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                 <ul class="left_side">
+                     <li>
+                  <a href="https://www.facebook.com/omegafoom/">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+                <li>
+              <a href="https://www.facebook.com/profile.php?id=100001993336790">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+          </ul>
+            </div>
+            <div class="col-6 text-right">
+                <ul class="right_side">
+            <li>
+              <a href="#">
+                  <div class="tagropa">
+                      <i class="fas fa-phone"></i>012-7982-195</div>
+
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <div class="tagropa"> <i class="fas fa-envelope"></i>e_ashoor@yahoo.com </div>
+
+              </a>
+            </li>
+          </ul>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!--container-->
+    </div>
+</div>
 <nav class="navbar navbar-expand-md navbar-expand-sm navbar-light bg-light sticky-top" data-toggle="affix">
-    <a class="navbar-brand" href="{{ home_url }}"> <div class="navbar-brand-name"><img src="img/logo.png" ></div>  Omega Foum</a>
+    <a class="navbar-brand" href="{{ home_url }}"> <div class="navbar-brand-name"><img src="{% static 'img/logo.png' %}"></div>  Omega Foum</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="#navbarResponsive" aria-expanded='false' aria-label='Toggle Navigation'>
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,7 +62,7 @@
                 <a class="nav-link" href="{{ home_url }}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ about_url }}">About us</a>
+                <a class="nav-link" href="{{ about_url }}">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link  " href="{{ product_list_url }}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="products.html">Products</a>
