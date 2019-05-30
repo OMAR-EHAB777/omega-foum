@@ -21,7 +21,7 @@ from .view import home_page , events_page , product_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'', home_page),
+    path(r'', home_page, name='home'),
     path('events/',events_page, name='events'),
     path('products/', product_page, name='products'),
 ]
