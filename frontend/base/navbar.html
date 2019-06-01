@@ -2,6 +2,15 @@
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'products' as product_url %}
+{% url 'wallpanel' as wallpanel_url %}
+{% url 'roofpanel' as roofpanel_url %}
+{% url 'freezer' as freezer_url %}
+{% url 'chiller' as chiller_url %}
+{% url 'deepfreezer' as deepfreezer_url %}
+{% url 'slidingdoors' as slidingdoors_url %}
+{% url 'hingedoors' as hingedoors_url %}
+{% url 'cravans' as cravans_url %}
+{% url 'steelsheet' as steelsheet_url %}
 {% url 'events' as events_url %}
 {% url 'contact' as contact_url %}
 {% url 'arabic' as arabic_url %}
@@ -72,10 +81,10 @@
 			<a href="{{ product_url }}">Sandwitch panel</a>
 			<ul>
 				<li>
-					<a href="#">wall panel</a>
+					<a href="{{ wallpanel_url }}">wall panel</a>
 				</li>
 				<li>
-					<a href="#">roof panel</a>
+					<a href="{{ roofpanel_url }}">roof panel</a>
 				</li>
 			</ul>
         </li>
@@ -83,13 +92,13 @@
 			<a href="{{ product_url }}">cold rooms</a>
 			<ul>
 				<li>
-					<a href="#">CHILLER</a>
+					<a href="{{ chiller_url }}">CHILLER</a>
 				</li>
 				<li>
-					<a href="#">FREEZER</a>
+					<a href="{{ freezer_url }}">FREEZER</a>
 				</li>
                 <li>
-					<a href="#">DEEP FREEZER & TUNNEL</a>
+					<a href="{{ deepfreezer_url }}">DEEP FREEZER & TUNNEL</a>
 				</li>
 			</ul>
         </li>
@@ -97,18 +106,18 @@
 			<a href="{{ product_url }}">insulted doors</a>
 			<ul>
 				<li>
-					<a href="#">HINGED DOORS</a>
+					<a href="{{ hingedoors_url }}">HINGED DOORS</a>
 				</li>
 				<li>
-					<a href="#">SLIDING DOORS</a>
+					<a href="{{ slidingdoors_url }}">SLIDING DOORS</a>
 				</li>
 			</ul>
         </li>
 		 <li>
-			<a href="{{ product_url }}">CARAVANS AND MOBILE BUILDING </a>
+			<a href="{{ cravans_url }}">CARAVANS AND MOBILE BUILDING </a>
 		</li>
 		 <li>
-			<a href="{{ product_url }}">CORRUGATED STEEL SHEETS </a>
+			<a href="{{ steelsheet_url }}">CORRUGATED STEEL SHEETS </a>
 		</li>
 	</ul>
                 </ul>

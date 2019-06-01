@@ -17,13 +17,22 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from .view import home_page , events_page , product_page
+from .view import home_page , events_page , product_page , wallpanell_page , roofpanel_page ,freezer_page,chiller_page,deepfreezer_page,slidingdoor_page,hingeddoors_page,cravans_page,steelsheet_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', home_page, name='home'),
     path('events/',events_page, name='events'),
-    path('products/', product_page, name='products'),
+    path('wallpanel/', wallpanell_page, name='wallpanel'),
+    path('roofpanel/', roofpanel_page, name='roofpanel'),
+    path('freezer/', freezer_page, name='freezer'),
+    path('chiller/', chiller_page, name='chiller'),
+    path('deepfreezer/', deepfreezer_page, name='deepfreezer'),
+    path('slidingdoors/', slidingdoor_page, name='slidingdoors'),
+    path('hingedoors/', hingeddoors_page, name='hingedoors'),
+    path('cravans/', cravans_page, name='cravans'),
+    path('steelsheet/', steelsheet_page, name='steelsheet'),
+
 ]
 if settings.DEBUG:
     # test mode
