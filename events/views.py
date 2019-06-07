@@ -14,7 +14,7 @@ def get_queryset(self, *args, **kwargs):
     return views
 class eventlistView(ListView):
     queryset = event.objects.all()
-    template_name = "events\event.html"
+    template_name = "events/event.html"
 
 
     def get_queryset(self, *args, **kwargs):
@@ -25,7 +25,7 @@ class eventlistView(ListView):
 
 class eventDetailSlugView( DetailView):
     queryset = event.objects.all().filter()
-    template_name = "events\events-detail.html"
+    template_name = "events/events-detail.html"
 
 def get_object(self,*args,**kwargs):
    request = self.request
