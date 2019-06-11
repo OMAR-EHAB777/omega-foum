@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from .view import home_page  , wallpanell_page , roofpanel_page ,freezer_page,chiller_page,deepfreezer_page,slidingdoor_page,hingeddoors_page,cravans_page,steelsheet_page
+from .view import home_page  ,about_page , wallpanell_page , roofpanel_page ,freezer_page,chiller_page,deepfreezer_page,slidingdoor_page,hingeddoors_page,cravans_page,steelsheet_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', home_page, name='home'),
+    path('about/', about_page, name='about'),
     path('events/', include(("events.urls","events"), namespace='events')),
     path('wallpanel/', wallpanell_page, name='wallpanel'),
     path('roofpanel/', roofpanel_page, name='roofpanel'),
