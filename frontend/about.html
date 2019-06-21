@@ -29,87 +29,164 @@ We strive for success and progress. Which depends essentially on<br> modern tech
     </div>
 
 </div>
-<div class="col-12 text-left">
-    <h3 class="heading"><span><span><span><span> MISSION,</span>  VISION</span> AND</span> GOALS</span></h3>
-        <div class="heading-underline2">
+
+<div class="warpper">
+    <div class="testimonial-carousel section-padding owl-carousel">
+        <div class="single-testi">
+            <div class="img-area">
+                <img src="{% static 'img/goal.png' %}">
+            </div>
+            <div class="img-text">
+                <h2>omar ehab</h2>
+                <h3>web designer</h3>
+                <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </p>
+                <hr>
+                <p>very professinol and honest highly recommended</p>
+            </div>
+        </div>
+         <div class="single-testi">
+            <div class="img-area">
+                <img src="{% static 'img/mision.png' %}">
+            </div>
+            <div class="img-text">
+                <h2>omar ehab</h2>
+                <h3>web designer</h3>
+                <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </p>
+                <hr>
+                <p>very professinol and honest highly recommended</p>
+            </div>
+        </div>
+         <div class="single-testi">
+            <div class="img-area">
+                <img src="{% static 'img/vision.png' %}">
+            </div>
+            <div class="img-text">
+                <h2>omar ehab</h2>
+                <h3>web designer</h3>
+                <p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </p>
+                <hr>
+                <p>very professinol and honest highly recommended</p>
+            </div>
         </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="row">
-  <div class="carousel-inner">
-      <div class="row ">
-    <div class="carousel-item active col-md-2">
-      <img class="d-block w-100" src="{% static 'img/goal.png' %}" alt="Our Goal" title="Our Goal"></div>
-  <div class="carousel-caption col-md-4">
-    <!-- Title Block -->
-						<h5 class="title text-left">
-				<a title="Our Goal"><span>Our <span>Goal</span></span></a>
-			</h5>
-    <p>Support the Egyptian economy by increasing the production and the export to the Arab and African countries as well as to the global markets... Product made in Egypt by Egyptian hands.</p>
-  </div>
-
-      </div>
-<div class="row ">
-    <div class="carousel-item col-md-2">
-      <img class="d-block w-100" src="{% static 'img/mision.png' %}" alt="Our Mission" title="Our Mission">
-         <div class="carousel-caption col-md-4">
-    <!-- Title Block -->
-						<h5 class="title text-left">
-				<a title="Our Mission"><span>Our<span>Mission</span></span></a>
-			</h5>
-    <p>introtext">We care to satisfy our customers by providing them with internationally certified high quality products via our specialized consultants and experienced technicians who provide them with advice and technical support to achieve our customer desired...</p>
-  </div>
-    </div></div>
-      <div class="row ">
-    <div class="carousel-item col-md-2">
-      <img class="d-block w-100" src="{% static 'img/vision.png' %}" alt="Our Vision" title="Our Vision">
-         <div class="carousel-captioncol-md-4">
-    <!-- Title Block -->
-						<h3 class="title text-left">
-                            <a title="Our Vision"><span>Our<span>Vision</span></span></a>
-			</h3>
-    <p>The continuous improvement through participation in international exhibitions. Improving our employees’ efficiency by involving them in advanced training programs.
- The Mutual cooperation with global consultants gaining all new in the companys...</p>
-  </div>
     </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-    </div></div></div>
 {% endblock %}
 {% block base_head %}
+
 <style>
-    .hey{
-        color: #1ebba3;
+
+   .warpper{
+       width: 1170px;
+       margin:0 auto;
+   }
+    .section-padding{
+        padding: 60px 0;
+
+
 
     }
-    .carousel-item {
-	width: 100%;
-	height: auto;
-	margin: 0px;
-	padding: 10px 5px;
-		background-color: #ffffff;	overflow: hidden;
-}
-    .carousel-item img{
+    .testimonial-carousel{
+        margin: 5% auto 0;
+    }
+    .img-area{
+        width: 100px;
+        height: 100px;
+        display: block;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .img-area img{
         width: 100%;
-    border-radius: 50%;
     }
-   #carouselExampleIndicators .carousel-item {
-	background-color: #ffffff;;
-	color: #222222;
-	padding: 10px;
-	margin: 0 5px;
-}
-    #vina-carousel-content169 .carousel-item a {
-	color: #84c1e8;
-}
-</style>
+    .single-testi{
+        background-color: #fff;
+        padding: 10%auto;
+        text-align: center;
+        border-radius: 100px 0 100px 0;
 
+    }
+    .img-text h2{
+        text-transform: uppercase;
+        margin: 20px 0 -15px;
+        color: #ff5257;
+    }
+    .img-text i{
+        color: #ff5257;
+    }
+    hr{
+        color: #ff5257;
+    }
+    .owl-dots{
+        text-align: center;
+    }
+   .owl-dots{
+        display: inline-block;
+        height: 15px; !important;
+        width: 15px; !important;
+        background-color: #fff;
+        opacity: 0.8;
+        border-radius: 50%;
+        margin: 50px 5px 0;
+    }
+    .owl-dots :active{
+        background-color: #ff5257 !important;
+    }
+    /*resbonsive css*/
+    @media only screen and(min-width: 786px)and (max-width: 991px){
+        .warpper{
+            width: 100%;
+        }
+        
+    }
+    @media only screen and(max-width: 786px){
+         .warpper{
+            width: 100%;
+        }
+
+    }
+    @media only screen and(min-width: 481px)and (max-width: 767px){
+        .warpper{
+            width: 100%;
+        }
+
+    }
+</style>
+<script>$('.testimonial-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})</script>
 {% endblock %}
+
