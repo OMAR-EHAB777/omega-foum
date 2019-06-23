@@ -29,164 +29,135 @@ We strive for success and progress. Which depends essentially on<br> modern tech
     </div>
 
 </div>
-
+<div class="col-12 text-left">
+    <h3 class="heading"><span><span><span><span> MISSION,</span>  VISION</span> AND</span> GOALS</span></h3>
+        <div class="heading-underline2">
+        </div>
+</div>
 <div class="warpper">
-    <div class="testimonial-carousel section-padding owl-carousel">
-        <div class="single-testi">
-            <div class="img-area">
-                <img src="{% static 'img/goal.png' %}">
-            </div>
-            <div class="img-text">
-                <h2>omar ehab</h2>
-                <h3>web designer</h3>
-                <p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </p>
-                <hr>
-                <p>very professinol and honest highly recommended</p>
-            </div>
-        </div>
-         <div class="single-testi">
-            <div class="img-area">
-                <img src="{% static 'img/mision.png' %}">
-            </div>
-            <div class="img-text">
-                <h2>omar ehab</h2>
-                <h3>web designer</h3>
-                <p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </p>
-                <hr>
-                <p>very professinol and honest highly recommended</p>
-            </div>
-        </div>
-         <div class="single-testi">
-            <div class="img-area">
-                <img src="{% static 'img/vision.png' %}">
-            </div>
-            <div class="img-text">
-                <h2>omar ehab</h2>
-                <h3>web designer</h3>
-                <p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </p>
-                <hr>
-                <p>very professinol and honest highly recommended</p>
-            </div>
-        </div>
+<div id="sidecarousellIndicators" class="carousel slide section-padding owl-carousel " data-ride="carousel">
+    <ol class="carousel-indicators active ">
+        <li data-target="#sidecarouselIndicators" data-slide-to="0" class="active"></li>
+       <li data-target="#sidecarouselIndicators" data-slide-to="1"></li>
+       <li data-target="#sidecarouselIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-sec">
+        <div class="carousel-item active">
+            <div class="row">
+       <!-- Image Block -->
+				<div class="image-block col-md-2">
+			<a href="#" title="Our Goal">
+				<img src="{% static 'img/goal.png' %}" alt="Our Goal" title="Our Goal"/>
+			</a>
+		</div>
 
+		<!-- Text Block -->
+				<div class="text-block col-md-10">
+			<!-- Title Block -->
+						<h3 class="title">
+				<a title="Our Goal">Our Goal</a>
+			</h3>
+
+			<!-- Info Block -->
+
+			<!-- Intro text Block -->
+						<div class="introtext">Support the Egyptian economy by increasing the production and the export to the Arab and African countries as well as to the global markets... Product made in Egypt by Egyptian hands.</div>
+
+			<!-- Readmore Block -->
+					</div>
+        </div></div>
+         <div class="carousel-item ">
+             <div class="row">
+       <!-- Image Block -->
+				<div class="image-block col-md-2">
+			<a href="#" title="Our Goal">
+				<img src="{% static 'img/mision.png' %}" alt="Our Mission" title="Our Mission"/>
+			</a>
+		</div>
+
+		<!-- Text Block -->
+				<div class="text-block col-md-10">
+			<!-- Title Block -->
+						<h3 class="title">
+				<a title="Our Goal"><span>Our<span>Mission</span></span></a>
+			</h3>
+
+			<!-- Info Block -->
+
+			<!-- Intro text Block -->
+						<div class="introtext"><p>We care to satisfy our customers by providing them with internationally certified high quality products via our specialized consultants and experienced technicians who provide them with advice and technical support to achieve our customer desired...</p></div>
+
+			<!-- Readmore Block -->
+					</div>
+         </div></div>
+         <div class="carousel-item ">
+             <div class="row">
+       <!-- Image Block -->
+				<div class="image-block col-md-2">
+			<a href="#" title="Our Goal">
+				<img src="{% static 'img/vision.png' %}" alt="Our Vision" title="Our Vision"/>
+			</a>
+		</div>
+
+		<!-- Text Block -->
+				<div class="text-block col-md-10">
+			<!-- Title Block -->
+						<h3 class="title">
+				<a title="Our Goal"><span>Our<span>Vision</span></span></a>
+			</h3>
+
+			<!-- Info Block -->
+
+			<!-- Intro text Block -->
+						<div class="introtext"><p>The continuous improvement through participation in international exhibitions. Improving our employees’ efficiency by involving them in advanced training programs.
+                                                  The Mutual cooperation with global consultants gaining all new in the companys...</p></div>
+
+			<!-- Readmore Block -->
+					</div>
+             </div></div>
     </div>
+
+</div>
 </div>
 {% endblock %}
 {% block base_head %}
-
 <style>
-
-   .warpper{
-       width: 1170px;
-       margin:0 auto;
-   }
-    .section-padding{
+.warpper{
+        width: 1170px;
+        margin: 0 auto;
+}
+.section-padding{
         padding: 60px 0;
-
-
-
-    }
-    .testimonial-carousel{
-        margin: 5% auto 0;
-    }
-    .img-area{
+}
+.image-block{
         width: 100px;
-        height: 100px;
+        height: 200px;
         display: block;
         overflow: hidden;
         border-radius: 50%;
         margin: 0 auto;
-    }
-    .img-area img{
+}
+.image-block img {
         width: 100%;
-    }
-    .single-testi{
+}
+.carousel-item{
         background-color: #fff;
         padding: 10%auto;
         text-align: center;
         border-radius: 100px 0 100px 0;
-
-    }
-    .img-text h2{
+}
+.introtext p{
         text-transform: uppercase;
-        margin: 20px 0 -15px;
-        color: #ff5257;
-    }
-    .img-text i{
-        color: #ff5257;
-    }
-    hr{
-        color: #ff5257;
-    }
-    .owl-dots{
-        text-align: center;
-    }
-   .owl-dots{
-        display: inline-block;
-        height: 15px; !important;
-        width: 15px; !important;
-        background-color: #fff;
-        opacity: 0.8;
-        border-radius: 50%;
-        margin: 50px 5px 0;
-    }
-    .owl-dots :active{
-        background-color: #ff5257 !important;
-    }
-    /*resbonsive css*/
-    @media only screen and(min-width: 786px)and (max-width: 991px){
-        .warpper{
-            width: 100%;
-        }
-        
-    }
-    @media only screen and(max-width: 786px){
-         .warpper{
-            width: 100%;
-        }
 
-    }
-    @media only screen and(min-width: 481px)and (max-width: 767px){
-        .warpper{
-            width: 100%;
-        }
-
-    }
+        color: #ff5257;
+}
 </style>
-<script>$('.testimonial-carousel').owlCarousel({
-    loop:true,
-    margin:20,
-    nav:true,
-    autoplay:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})</script>
+<script  type="text/javascript">
+$(document).ready(function(){
+  $(".sidecarousellIndicators").carousel({
+      interval: 2000
+  });
+});
+</script>
 {% endblock %}
 
