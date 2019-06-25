@@ -25,5 +25,7 @@ def cravans_page(request):
     return render(request, "CARAVANS.html", {})
 def steelsheet_page(request):
     return render(request, "STEEL-SHEETS.html", {})
+def contact_page(request):
+    return render(request, "contact.html", {})
 
 

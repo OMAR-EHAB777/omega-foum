@@ -35,7 +35,7 @@
         </div>
 </div>
 <div class="warpper">
-<div id="sidecarousellIndicators" class="carousel slide section-padding owl-carousel " data-ride="carousel">
+<div id="sidecarousellIndicators" class="carousel slide section-padding owl-carousel " data-ride="carousel" data-interval="4000">
     <ol class="carousel-indicators active ">
         <li data-target="#sidecarouselIndicators" data-slide-to="0" class="active"></li>
        <li data-target="#sidecarouselIndicators" data-slide-to="1"></li>
@@ -119,6 +119,7 @@
 
 </div>
 </div>
+
 {% endblock %}
 {% block base_head %}
 <style>
@@ -151,13 +152,10 @@
 
         color: #ff5257;
 }
+
+
 </style>
-<script  type="text/javascript">
 
-  $(".sidecarousellIndicators").carousel({
-      interval: 2000,
-  })
 
-</script>
 {% endblock %}
 

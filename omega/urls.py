@@ -17,7 +17,18 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from .view import home_page  ,about_page , wallpanell_page , roofpanel_page ,freezer_page,chiller_page,deepfreezer_page,slidingdoor_page,hingeddoors_page,cravans_page,steelsheet_page
+from .view import (home_page  ,
+                   about_page ,
+                   wallpanell_page ,
+                   roofpanel_page ,
+                   freezer_page,
+                   chiller_page,
+                   deepfreezer_page,
+                   slidingdoor_page,
+                   hingeddoors_page,
+                   cravans_page,steelsheet_page,
+                   contact_page
+                )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,6 +44,7 @@ urlpatterns = [
     path('hingedoors/', hingeddoors_page, name='hingedoors'),
     path('cravans/', cravans_page, name='cravans'),
     path('steelsheet/', steelsheet_page, name='steelsheet'),
+    path('contact/', contact_page, name='contact'),
 
 ]
 if settings.DEBUG:
