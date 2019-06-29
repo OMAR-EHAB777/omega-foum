@@ -27,7 +27,9 @@ from .view import (home_page  ,
                    slidingdoor_page,
                    hingeddoors_page,
                    cravans_page,steelsheet_page,
-                   contact_page
+                   contact,
+                   thank
+
                 )
 
 urlpatterns = [
@@ -44,7 +46,8 @@ urlpatterns = [
     path('hingedoors/', hingeddoors_page, name='hingedoors'),
     path('cravans/', cravans_page, name='cravans'),
     path('steelsheet/', steelsheet_page, name='steelsheet'),
-    path('contact/', contact_page, name='contact'),
+    path('thanks/', thank, name='thank'),
+    path('contact/', contact, name='contact'),
 
 ]
 if settings.DEBUG:
