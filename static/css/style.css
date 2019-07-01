@@ -368,9 +368,9 @@ h3.heading{
 
 /*-- end of why choose us--*/
 header .carousel-inner{
+    position: center;
    width: 100vh;
    height: 500px;
-    margin-left: 335px;
     margin-bottom: 1.5em;
 
 }
@@ -390,29 +390,6 @@ header .carousel-inner .item img{
 
 }
 
-.carousel-caption{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 38%;
-    z-index: 1;
-    text-transform: uppercase;
-    color: #bd2130;
-}
-.carousel-caption h2{
-     font-size: 3.8rem;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem black;
-    padding-bottom: 1rem;
-    padding-right: 400px;
-}
-.carousel-caption h3{
-    font-size: 2rem;
-    text-shadow: .1rem .1rem .8rem black ;
-    padding-bottom: 1.6rem;
-    padding-right: 450px;
-}
 .carousel-control.right{
     background-image: none;
 }
@@ -432,15 +409,185 @@ header .carousel-inner .item img{
 
 }
 .carousel-indicators :active{
-    
+
     height:17px;width:17px
 
 
 }
 
 /* ignore the code below */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/*--slider--*/
+/* Makes images fully responsive */
 
 
+.carousel-inner{
+  border-radius: 15px;
+  width: 100vh;
+  height: 500px;
+   position: relative;
+   display: block;
+
+
+}
+.carousel-inner .item{
+    height: 100vh;
+
+}
+  .carousel-inner .item img{
+     min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    box-sizing: border-box;
+
+
+}
+ .carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+ .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/*--end of slider--*/
 /*-- footer--*/
  footer{
      background-color: #818182;
@@ -509,57 +656,54 @@ header .carousel-inner .item img{
 /*-- media quiries--*/
 @media (max-width:767px) {
 
-    .caption h1{
+    .caption h1 {
         font-size: 2.3rem;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
-    .caption h3{
+
+    .caption h3 {
         font-size: 1.2rem;
         padding-bottom: 1.2rem;
     }
-    .btn-lg{
+
+    .btn-lg {
         padding: .5rem 1rem;
         font-size: 1rem;
     }
-    .features img{
-    max-width: 40%;
-    border-radius: 50%;
+
+    .features img {
+        max-width: 40%;
+        border-radius: 50%;
         display: block;
         margin: 0 auto;
-}
-    .form input{
-        width: 200px;%;
-        height:30px;
-        background-color: #555;
-        border:0
-}
-    .form input:last-of-type{
-    height:100px;
+    }
 
-}
-    .form button{
+    .form input {
+        width: 200px;
+    %;
+        height: 30px;
+        background-color: #555;
+        border: 0
+    }
+
+    .form input:last-of-type {
+        height: 100px;
+
+    }
+
+    .form button {
         margin-left: 70px;
         text-transform: uppercase;
         font-size: .7rem;
         padding: .6rem 1.2rem;
         border-radius: 3.2rem;
     }
+}
+@media screen and (min-width: 992px) {
 
-.carousel-caption h2{
-  font-size: 2.3rem;
-        letter-spacing: .15rem;
-        padding-bottom: .5rem;
-}
-.carousel-caption h3{
-  font-size: 1.2rem;
-        padding-bottom: 1.2rem;
-}
-header .carousel-inner{
-   width: 100vh;
-   height: 500px;
-    margin-right:700px;
-    margin-bottom: 1.5em;
+  .container {
+    max-width: 930px;
+  }
 
-}
 }
