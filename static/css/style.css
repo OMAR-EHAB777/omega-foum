@@ -20,7 +20,8 @@
 body{
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    color: #28a745;
+    color:#08526d;
+
 }
 .offset::before{
     margin-top: -4rem;
@@ -250,7 +251,8 @@ body{
     padding: 1.5rem auto;
     padding-top:2rem ;
     text-align: center;
-    color: black;
+    color: #bd2130;
+    background-image: url("img/background.jpg");
 }
 .narrow h1{
     font-size: 2.4rem;
@@ -264,12 +266,14 @@ body{
     border-width: medium;
     margin: 1rem;
     color: white;
+    background-color: #08526d;
+    border-color: #08526d;
 
 
 }
 .btn-secondary:hover{
-    background-color: #119580;
-    border-color: #129584;
+    background-color: orange;
+    border-color: orange;
 }
 /*-- end of about us--*/
 /** statics--*/
@@ -315,7 +319,7 @@ h3.heading{
 
 }
 .features svg.svg-inline--fa{
-    color: #0069d9;
+    color: #08526d;
 }
 .features h3{
     text-transform: uppercase;
@@ -423,7 +427,7 @@ header .carousel-inner .item img{
     height: 10px;
     width: 10px;
     border:1px solid #d12626;
-    background: gray;
+    background: #08526d;
 
 
 }
@@ -469,7 +473,7 @@ header .carousel-inner .item img{
  .form input{
     width:50%;
     height:30px;
-    background-color: #555;
+    background-color: #08526d;
     border:0
 }
  .form input:last-of-type{
