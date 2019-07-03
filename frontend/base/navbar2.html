@@ -1,19 +1,19 @@
 {% load static %}
-{% url 'home' as home_url %}
-{% url 'about' as about_url %}
-{% url 'products' as product_url %}
-{% url 'wallpanel' as wallpanel_url %}
-{% url 'roofpanel' as roofpanel_url %}
-{% url 'freezer' as freezer_url %}
-{% url 'chiller' as chiller_url %}
-{% url 'deepfreezer' as deepfreezer_url %}
-{% url 'slidingdoors' as slidingdoors_url %}
-{% url 'hingedoors' as hingedoors_url %}
-{% url 'cravans' as cravans_url %}
-{% url 'steelsheet' as steelsheet_url %}
+{% url 'home/ar' as home2_url %}
+{% url 'arabic:about2/' as about2_url %}
+{% url 'products' as product2_url %}
+{% url 'arabic:wallpanel2/' as wallpanel2_url %}
+{% url 'arabic:roofpanel2/' as roofpanel2_url %}
+{% url 'freezer/ar' as freezer2_url %}
+{% url 'chiller/ar' as chiller2_url %}
+{% url 'deepfreezer/ar' as deepfreezer2_url %}
+{% url 'slidingdoors/ar' as slidingdoors2_url %}
+{% url 'hingedoors/ar' as hingedoors2_url %}
+{% url 'cravans/ar' as cravans2_url %}
+{% url 'steelsheet/ar' as steelsheet2_url %}
 {% url 'events:list' as event_list_url %}
 {% url 'contact' as contact_url %}
-{% url 'arabic:home/ar' as arabic_url %}
+{% url 'home' as home_url %}
 <!--- start home section -->
 
 <div id="home"> </div>
@@ -60,7 +60,7 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-md navbar-expand-sm navbar-light bg-light sticky-top" data-toggle="affix">
-    <a class="navbar-brand" href="{{ home_url }}"> <div class="navbar-brand-name"><img src="{% static 'img/logo.png' %}"></div>  Omega Foum</a>
+    <a class="navbar-brand" href="{{ home2_url }}"> <div class="navbar-brand-name"><img src="{% static 'img/logo.png' %}"></div>  Omega Foum</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="#navbarResponsive" aria-expanded='false' aria-label='Toggle Navigation'>
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -68,69 +68,69 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ home_url }}">Home</a>
+                <a class="nav-link" href="{{ home2_url }}">الرئيسية</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ about_url }}">About</a>
+                <a class="nav-link" href="{{ about2_url }}">عن الشركة</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="products.html">Products</a>
+                <a class="nav-link  " href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="products.html">المنتجات</a>
                 <ul class="dropdown-menu">
                     <ul class="cl-menu">
         <li id='panel'>
-			<a href="{{ product_url }}">Sandwitch panel</a>
+			<a href="{{ product2_url }}">الواح معزوله</a>
 			<ul>
 				<li>
-					<a href="{{ wallpanel_url }}">wall panel</a>
+					<a href="{{ wallpanel2_url }}">الواح الحائط</a>
 				</li>
 				<li>
-					<a href="{{ roofpanel_url }}">roof panel</a>
+					<a href="{{ roofpanel2_url }}">الواح السقف</a>
 				</li>
 			</ul>
         </li>
         <li id='rooms'>
-			<a href="{{ product_url }}">cold rooms</a>
+			<a href="{{ product2_url }}">غرف ومخازن تبريد </a>
 			<ul>
 				<li>
-					<a href="{{ chiller_url }}">CHILLER</a>
+					<a href="{{ chiller2_url }}">تبريد</a>
 				</li>
 				<li>
-					<a href="{{ freezer_url }}">FREEZER</a>
+					<a href="{{ freezer2_url }}">تجميد</a>
 				</li>
                 <li>
-					<a href="{{ deepfreezer_url }}">DEEP FREEZER & TUNNEL</a>
+					<a href="{{ deepfreezer2_url }}">أنفاق</a>
 				</li>
 			</ul>
         </li>
 		<li id='doors'>
-			<a href="{{ product_url }}">insulted doors</a>
+			<a href="{{ product2_url }}">الابواب المعزوله</a>
 			<ul>
 				<li>
-					<a href="{{ hingedoors_url }}">HINGED DOORS</a>
+					<a href="{{ hingedoors2_url }}">الابواب المفصليه</a>
 				</li>
 				<li>
-					<a href="{{ slidingdoors_url }}">SLIDING DOORS</a>
+					<a href="{{ slidingdoors2_url }}">الابواب المنزلقة</a>
 				</li>
 			</ul>
         </li>
 		 <li>
-			<a href="{{ cravans_url }}">CARAVANS AND MOBILE BUILDING </a>
+			<a href="{{ cravans2_url }}">الكرفانات والمبانى المتنقله </a>
 		</li>
 		 <li>
-			<a href="{{ steelsheet_url }}">CORRUGATED STEEL SHEETS </a>
+			<a href="{{ steelsheet2_url }}">ألواح الصاج المعرج </a>
 		</li>
 	</ul>
                 </ul>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ event_list_url }}">events</a>
+                <a class="nav-link" href="{{ event_list_url }}">الاحداث</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ contact_url }}">Contact</a>
+                <a class="nav-link" href="{{ contact_url }}">اتصل بنا</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ arabic_url }}">العربية</a>
+                <a class="nav-link" href="{{ home_url }}">English</a>
             </li>
         </ul>
     </div>

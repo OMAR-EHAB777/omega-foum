@@ -1,0 +1,181 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+<body>
+<div class="jumbotron" style="background-image: url({% static 'img/201.png' %}) ">
+    <div class="narrow">
+         <div class="col-12 text-center">
+             <!-- our product Block -->
+        <h3 class="heading">منتجاتنا</h3>
+         <div class="heading-underline">
+        </div>
+        <p class="lead">تأسست شركة اوميجافوم لصناعات غرف التبريد والصناعات المعدنية فى عام 2005 حيث تم بناء المصنع بالمنطقة الصناعية بمدينة الفيوم   </p>
+
+    </div>
+    </div></div>
+
+<div class="section3">
+       <div class="container">
+           <!-- description Block -->
+          <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 module come-in">
+             <div class="img3">
+                <img src="{% static 'img/27379.jpg' %}" alt="img1">
+             </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 module come-in">
+             <div class="con1">
+                <span>المواصفات</span>
+                <h2>الواح الحائط</h2>
+                <div class="tags">
+                  <div class="tg">
+                     <div class="tgimg"><img src="http://kalanidhithemes.com/live-preview/landing-page/unique-software/images/i1.png" alt="icon1"></div>
+                     <div class="tgcon">
+                       <span>البانوهات  :</span>
+                            <p>يتم تصنيع البانوهات من الحوائط سابقة التجهــيز باستخــدام مادة البولي
+                                    يـــوريثان بكثافة 40 كجم/م3 بواسطة ماكينـات  الحقن والكبس للحصول
+                                    على الضغط المناســـب
+                            </p>
+                       <p></p>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+
+                  <div class="tg">
+                     <div class="tgimg"><img src="http://kalanidhithemes.com/live-preview/landing-page/unique-software/images/i2.png" alt="icon2"></div>
+                     <div class="tgcon">
+                       <span>الطلاء:</span>
+                          <p>حسب الطلب يتم استخدام الواح صاج مجلفن مدهوب بوية فرن   ،   او
+                            المزج بين لوح استانلس ستيل او فيبر او الومنيوم مع الصاج .
+                          </p>
+                       <p></p>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+                    <div class="tg">
+                     <div class="tgimg"><img src="http://kalanidhithemes.com/live-preview/landing-page/unique-software/images/i3.png" alt="icon3"></div>
+                     <div class="tgcon">
+                       <span>الطول:</span>
+                       <p>متوفر جميع الاطوال حتى 12 م لتوفير جميع احتياجات السوق والعميل
+                          *يتم تدعيم عصب الصاج بتعريج طولي لكامل اللوح لاكسابة صلابة
+                       </p>
+                       <p></p>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+                    <div class="tg">
+                     <div class="tgimg"><img src="http://kalanidhithemes.com/live-preview/landing-page/unique-software/images/i3.png" alt="icon3"></div>
+                     <div class="tgcon">
+                       <span>تركيب البانل :</span>
+                       <p>*يتم تجميع البانل بنظام العاشق والمعشوق حيث ان البانل مصمم بطريقة
+                                تسمح للتجميع بذلك
+*استخدام LOCKING SYSTEM المقاوم للصدأ
+                                               *يتم تركيب زوايا الومنيوم ذات غطاء PVC مستورد
+                             كل ذلك ما يــؤدي لمقــــاومة تسريب الهواء والرطوبة داخل وخارج جسم
+                               الغرفة
+                         </p>
+                       <p></p>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+
+                </div>
+
+             </div>
+          </div>
+        </div>
+      </div>
+      </div>
+{% endblock %}
+
+{% block base_head %}
+<style>
+        /*-----------------------------------------------------------------------------------
+
+ who we are
+
+-----------------------------------------------------------------------------------*/
+.lead{
+    color: #08526d;
+}
+    /* End who we are section */
+    /*-----------------------------------------------------------------------------------
+
+ Graph chart
+
+-----------------------------------------------------------------------------------*/
+
+.con1 span{
+	font-weight:400;
+	color:#b62d2b;
+	font-size:12px;
+	text-transform:uppercase;
+	padding-bottom:5px;
+	display:block;
+}
+
+.con1 h2{
+	font-weight:400;
+	color:#1a1a1a;
+	font-size:37px;
+	line-height:38px;
+	margin:0;
+	background:url(../images/line.png) no-repeat left bottom;
+	padding-bottom:10px;
+	margin-bottom:25px;
+}
+.con1{
+	padding-top:0px;
+}
+
+.con1 .p{
+	font-weight:400;
+	color:#8a8a8al;
+	font-size:13px;
+	line-height:26px;
+}
+
+.tgimg {
+  float: left;
+  min-width: 55px;
+  padding-top: 8px;
+  width: 10%;
+}
+.tgcon{
+	float:left;
+	width:85%;
+}
+.tgcon span{
+	display:block;
+	font-weight:400;
+	color:#1a1a1a;
+	font-size:18px;
+}
+.tgcon p{
+	font-weight:400;
+	color:#08526d;
+	font-size:13px;
+	line-height:26px;
+}
+.tags{
+	padding-top:60px;
+}
+.tg{
+	padding-bottom:45px;
+}
+.img3 img{
+	width:90%;
+	    height: 89vh;
+	border-radius:6px;
+	border:#e2e7ec solid 1px;
+	-webkit-box-shadow: 7px 6px 34px -9px rgba(144,155,165,0.48);
+-moz-box-shadow: 7px 6px 34px -9px rgba(144,155,165,0.48);
+box-shadow: 7px 6px 34px -9px rgba(144,155,165,0.48);
+}
+.section3{
+	padding-bottom:50px;
+}
+/* End Grap chart */
+</style>
+{% endblock %}
+</body>

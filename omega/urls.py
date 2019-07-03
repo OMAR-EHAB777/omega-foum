@@ -48,6 +48,7 @@ urlpatterns = [
     path('steelsheet/', steelsheet_page, name='steelsheet'),
     path('thanks/', thank, name='thank'),
     path('contact/', contact, name='contact'),
+    path('arabic/', include(("arabic.urls","arabic"), namespace='arabic')),
 
 ]
 if settings.DEBUG:

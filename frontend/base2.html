@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+    <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>omega foum</title>
+
+
+        {% include 'base/css.html' %}
+        {% block base_head %}
+
+   <!--- End of Script Source Files -->{% endblock %}
+    </head>
+    <body style="background-image: url({% static 'img/201.png' %}) ">
+       {% include 'base/navbar2.html' %}
+    <div class='container-fluid'>
+         {% block content %}
+            {% endblock %}
+
+</div>
+       {% include 'base/footer.html' %}
+
+        {% include 'base/js.html' %}
+        {% block javascript %}
+        <!--- Script Source Files -->
+       <!--- End of Script Source Files -->
+        {% endblock %}
+    </body>
+</html>
