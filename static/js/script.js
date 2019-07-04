@@ -1,7 +1,7 @@
 $(function () {
       // custom formatting example
       "use strict";
-      $('.statics').countTo({
+      $('.timer').countTo({
         interval:30000
       });
 
