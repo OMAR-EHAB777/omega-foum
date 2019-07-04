@@ -2,7 +2,7 @@ $(function () {
       // custom formatting example
       "use strict";
       $('.timer').countTo({
-        interval:15000
+        interval:30000
       });
 
 });
