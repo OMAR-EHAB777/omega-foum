@@ -106,7 +106,9 @@ body{
     padding: 0 15px 0 0;
     /*margin: -18px 10px;*/
 }
-
+..navbar-brand-name{
+    color:orange;
+}
 
 
 .navbar-nav li{
