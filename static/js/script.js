@@ -3,6 +3,7 @@ $(function () {
       "use strict";
       $('.timer').countTo({
         interval:30000
+        autoplaySpeed: 30000;
       });
 
 });
