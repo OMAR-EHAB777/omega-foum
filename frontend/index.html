@@ -1,7 +1,5 @@
-
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <body data-spy="scroll" data-target="#navbarResponsive" data-offset="56">
 <!-- start landing page-->
@@ -30,7 +28,7 @@
     </div>
 </div>
 <!-- end About Us section -->
-<!--our work -->
+<!--start of who we are -->
 <div class="jumbotron" style="background-image: url({% static 'img/201.png' %}) ">
     <div class="narrow" >
     <div class="col-12 text-center">
@@ -54,7 +52,6 @@
                     <p>The continuous improvement through participation in international...</p>
                      <a class="btn btn-secondary btn-md " href="/about" target="_blank">Read More</a>
                 </div>
-
             </div>
             <div class="col-md-4">
                 <div class="features">
@@ -65,13 +62,13 @@
                 </div>
 
             </div>
-
-
         </div>
     </div>
-    </div><!-- end narrow-->
+    </div>
 </div>
-</div>
+<!-- end narrow-->
+<div class="border-client"></div>
+<!-- start of why us-->
 <div id="why choose us" class="offset">
     <div class="fixed-background" style="background-image: url({% static 'img/201.png' %}) ">
         <div class="col-12 text-center"> <h3 class="heading">WHY CHOOSE US?</h3>
@@ -79,8 +76,6 @@
         </div>
         <p class="lead"> omega foum  for Panel and Steel Industries was founded in 2000. the factory was set up inside the industrial zone in fayoum city. </p>
         </div>
-
-
         <div class=" row text-center">
             <div class="col-md-4">
                 <div class="feature">
@@ -88,19 +83,19 @@
                       <p><i class="fas fa-desktop" data-fa-transform="shrink-3 up-5"></i></p>
                     <div>
                     <h3>Complete Service Solution</h3>
-                     <p class="lead"> Sed varius orci non dui sodales scelerisque convallis</p></div>
+                     <p class="lead"> To support the company to provide all the necessary capabilities</p></div>
                     </div>
                      <div class="box">
                       <p><i class="fab fa-algolia" data-fa-transform="shrink-2 up-1.5"></i></p>
                    <div>
                       <h3>Deliver on Time</h3>
-                        <p class="lead"> Sed varius orci non dui sodales scelerisque convallis</p></div>
+                        <p class="lead">The company provides its services through the work of technical studies in the stages of studying tenders and various projects </p></div>
                   </div>
                      <div class="box">
                       <p><i class="fas fa-wallet" data-fa-transform="shrink-3 up-5"></i></p>
                    <div>
                       <h3>Cost efficient</h3>
-                        <p class="lead"> Sed varius orci non dui sodales scelerisque convallis</p></div>
+                        <p class="lead">The company provides after sales maintenance and the company provides comprehensive guarantee for all works</p></div>
                   </div>
 
                 </div>
@@ -111,13 +106,11 @@
                 </div>
 
             </div>
-
-
-    </div><!-- end of why choose us-->
+    </div>
 </div>
-<!-- end of our work -->
-    <!-- start of statics-->
-     <!-- Start Statistics -->
+<!-- end of why choose us-->
+<div class="border-client"></div>
+<!-- Start Statistics -->
     <div id="statics" class="offset" style="background-image: url({% static 'img/201.png' %}) ">
     <div class="stats text-center">
       <div class="container">
@@ -154,8 +147,8 @@
       </div>
     </div>
     </div>
+    <div class="border-client"></div>
 <!-- End Statistics -->
-    <!-- end of statics-->
 <!-- start Products section -->
 <div id="Products" class="offset"></div>
 <!-- end Products section -->
@@ -182,179 +175,94 @@
    </section>
 </div>
 <!-- end clients section -->
-
+<div class="border-client"></div>
+<!-- start of gallery section -->
+        <div class="gallery-section">
+      <div class="inner-width">
         <div class="col-12 text-center">
         <h3 class="heading"><span><span>OUR</span>  WORKS</span></h3>
-         <div class="heading-underline">
+             <div class="heading-underline">
         </div>
     </div>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators active ">
-       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
-       <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+        <div class="gallery">
 
+          <a href="{% static 'img/pro20.jpg' %}" class="image" title="chiller room">
+            <img src="{% static 'img/pro20.jpg' %}" alt="">
 
+          </a>
 
+          <a href="{% static 'img/pro33.jpg' %}" class="image" title="cold room">
+            <img src="{% static 'img/pro33.jpg' %}" alt="">
+          </a>
 
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-          <img class="  img-fluid" src="{% static 'img/pro20.jpg' %}" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
+          <a href="{% static 'img/pro36.jpg' %}" class="image" title="cold room">
+            <img src="{% static 'img/pro36.jpg' %}" alt="">
+          </a>
+
+          <a href="{% static 'img/pro30.jpg' %}" class="image" title="chiller room 3*3">
+            <img src="{% static 'img/pro30.jpg' %}" alt="">
+          </a>
+
+          <a href="{% static 'img/pro2.jpg' %}" class="image" title="panel box">
+            <img src="{% static 'img/pro2.jpg' %}" alt="">
+          </a>
+
+          <a href="{% static 'img/pro65.jpg' %}" class="image" title="sandwich panel">
+            <img src="{% static 'img/pro65.jpg' %}" alt="">
+          </a>
+
+          <a href="{% static 'img/pro60.png' %}" class="image" title="cold room">
+            <img src="{% static 'img/pro60.png' %}" alt="">
+          </a>
+
+          <a href="{% static 'img/pro10.jpg' %}" class="image" title="small car panel box">
+            <img src="{% static 'img/pro10.jpg' %}" alt="">
+          </a>
+          <a href="{% static 'img/walk-in-expensive.png' %}" class="image" title="cold coil">
+            <img src="{% static 'img/walk-in-expensive.png' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro21.jpg' %}" class="image" title="cold tunnel">
+            <img src="{% static 'img/pro21.jpg' %}" alt="">
+          </a>
+          <a href="{% static 'img/pro17.jpg' %}" class="image" title="cold room 3*3">
+            <img src="{% static 'img/pro17.jpg' %}" alt="">
+          </a>
+          <a href="{% static 'img/pro12.jpg' %}" class="image" title="cold room">
+            <img src="{% static 'img/pro12.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro11.jpg' %}" class="image" title="golf car panel box">
+            <img src="{% static 'img/pro11.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/017-small.jpg' %}" class="image" title="steels-steel">
+            <img src="{% static 'img/017-small.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro7.jpg' %}" class="image" title="chiller coil">
+            <img src="{% static 'img/pro7.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro9.jpg' %}" class="image" title="control panels">
+            <img src="{% static 'img/pro9.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro3.jpg' %}" class="image" title="chiller rooms with partitions">
+            <img src="{% static 'img/pro3.jpg' %}" alt="">
+          </a>
+           <a href="{% static 'img/pro32.jpg' %}" class="image" title="sliding door">
+            <img src="{% static 'img/pro32.jpg' %}" alt="">
+          </a>
+         <a href="{% static 'img/pro4.png' %}" class="image" title="car cold box">
+            <img src="{% static 'img/pro4.png' %}" alt="">
+          </a>
+         <a href="{% static 'img/pro13.jpg' %}" class="image" title="steels-steel">
+            <img src="{% static 'img/pro13.jpg' %}" alt="">
+          </a>
         </div>
-   <div class="carousel-item">
-          <img class="  img-fluid" src="{% static 'img/pro33.jpg' %}" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-        </div>
-    <div  class="carousel-item">
-          <img class="img-fluid"src="{% static 'img/pro36.jpg' %}" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-        </div>
-
-    <div class="carousel-item">
-      <img class="img-fluid" src="{% static 'img/pro30.jpg' %}" alt="4slide">
-        <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
+      </div>
     </div>
-      <div class="carousel-item">
-         <img class="  img-fluid" src="{% static 'img/pro2.jpg' %}" alt="Second slide">
-       <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" src="{% static 'img/pro65.jpg' %}" alt="6 slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" src="{% static 'img/pro60.png' %}" alt="7 slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" w-100 img-fluid" src="{% static 'img/pro10.jpg' %}" alt="8slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" src="{% static 'img/walk-in-expensive.png' %}" alt="9 slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class="img-fluid" src="{% static 'img/pro21.jpg' %}" alt="10 slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" src="{% static 'img/pro17.jpg' %}" alt="11 slide">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img  class=" img-fluid" alt="Responsive image" src="{% static 'img/pro12.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" alt="Responsive image" src="{% static 'img/pro11.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class="img-fluid" alt="Responsive image" src="{% static 'img/017-small.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" alt="Responsive image" src="{% static 'img/pro7.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid"  alt="Responsive image" src="{% static 'img/pro9.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img  class=" img-fluid" alt="Responsive image" src="{% static 'img/pro3.jpg' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img  class=" img-fluid" alt="Responsive image" src="{% static 'img/pro4.png' %}" >
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-      <img class=" img-fluid" src="{% static 'img/pro30.jpg' %}" alt="Responsive image">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-      <div class="carousel-item">
-     <img  class="img-fluid" src="{% static 'img/pro5.jpg' %}" alt="Responsive image">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-    </div>
-
-  </div>
-
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
+<!-- end gallery section -->
+ <div class="border"></div>
 {% endblock %}
 {% block base_head %}
 <style>
-    .panel.date {
+.panel.date {
     margin: 0px;
     width: 60px;
     text-align: center;

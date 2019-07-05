@@ -44,7 +44,7 @@ body{
 .top_menu{
     background: #262533;
     height: 40px;
-    line-height: 16px;
+    line-height: 2px;
 
 
 
@@ -53,7 +53,7 @@ body{
     display: inline-block;
 }
 .left_side li a{
-     margin-right: 20px;
+     margin-right: 10px;
      color: #ffffff;
 }
 .left_side li a:hover{
@@ -417,7 +417,7 @@ header .carousel-inner .item img{
 
 }
 
-/* ignore the code below */
+/* start of our clients section using slick slider */
 .slick-slide {
     margin: 0px 20px;
 }
@@ -533,35 +533,57 @@ header .carousel-inner .item img{
     display: none;
 }
 /*--slider--*/
-/* Makes images fully responsive */
 
-
-.carousel-inner{
-  border-radius: 15px;
-  width: 100vh;
-  height: 500px;
-   position: relative;
-   display: block;
-
+/*--start of gallery--*/
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
 
 }
-.carousel-inner .item{
-    height: 100vh;
 
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
-  .carousel-inner .item img{
-     min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    box-sizing: border-box;
 
-
+.border-client{
+  width: 180px;
+  height: 2px;
+  background: #333;
+  margin: 25px auto;
 }
- .carousel-caption {
-  background-color: rgba(0,0,0,.5);
+.border{
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin:  auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(15deg);
+}
+.alter{
+    background-color: rgba(0,0,0,.5);
   position: absolute;
   left: 0;
   right: 0;
@@ -569,27 +591,26 @@ header .carousel-inner .item img{
   z-index: 10;
   padding: 0 0 10px 25px;
   color: #fff;
-  text-align: left;
 }
- .carousel-indicators {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 15;
-  margin: 0;
-  padding: 0 25px 25px 0;
-  text-align: right;
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
 }
 
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
 }
 
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
 
-/*--end of slider--*/
+/*--start of gallery--*/
 /*-- footer--*/
  footer{
      background-color: #818182;
@@ -679,27 +700,6 @@ header .carousel-inner .item img{
         border-radius: 50%;
         display: block;
         margin: 0 auto;
-    }
-
-    .form input {
-        width: 200px;
-    %;
-        height: 30px;
-        background-color: #555;
-        border: 0
-    }
-
-    .form input:last-of-type {
-        height: 100px;
-
-    }
-
-    .form button {
-        margin-left: 70px;
-        text-transform: uppercase;
-        font-size: .7rem;
-        padding: .6rem 1.2rem;
-        border-radius: 3.2rem;
     }
 }
 @media screen and (min-width: 992px) {

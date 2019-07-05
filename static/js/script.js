@@ -2,8 +2,7 @@ $(function () {
       // custom formatting example
       "use strict";
       $('.timer').countTo({
-        interval:30000
-        
+        speed:10000
       });
 
 });
@@ -38,4 +37,6 @@ $(document).ready(function(){
         }]
     });
 });
+
+
 
