@@ -1,5 +1,4 @@
 from django import forms
-
 # our new form
 
 class ContactForm(forms.Form):

@@ -13,6 +13,7 @@
 {% url 'steelsheet' as steelsheet_url %}
 {% url 'events:list' as event_list_url %}
 {% url 'contact' as contact_url %}
+{% url 'feedback:feedback' as feedback_url %}
 {% url 'arabic:home/ar' as arabic_url %}
 <!--- start home section -->
 
@@ -127,7 +128,7 @@
                 <a class="nav-link" href="{{ event_list_url }}">events</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ contact_url }}">Contact</a>
+                <a class="nav-link" href="{{ feedback_url }}">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ arabic_url }}">العربية</a>

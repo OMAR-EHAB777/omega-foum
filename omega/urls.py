@@ -38,9 +38,7 @@ from .view import (home_page  ,
                    slidingdoor_page2 ,
                    steelsheet_page2 ,
                    hingeddoors_page2 ,
-                   thank,
-                   contact
-
+                   thank
                 )
 
 urlpatterns = [
@@ -68,7 +66,7 @@ urlpatterns = [
     path('cravans/ar', cravans_page2, name='cravans/ar'),
     path('steelsheet/ar', steelsheet_page2, name='steelsheet/ar'),
     path('thanks/', thank, name='thank'),
-    path('contact/', contact, name='contact'),
+    path('feedback/', include(("feedback.urls","feedback"), namespace='feedback')),
     path('arabic/', include(("arabic.urls","arabic"), namespace='arabic')),
 
 ]
