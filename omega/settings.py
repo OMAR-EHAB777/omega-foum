@@ -21,11 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'tnur@5#_3zcoi^-u%1%wtsit2^08(a0-_$ig(2-0vfiq-&=qh_'
-SECRET_KEY=os.environ.get('SECRET_KEY')
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
+SECRET_KEY = 'tnur@5#_3zcoi^-u%1%wtsit2^08(a0-_$ig(2-0vfiq-&=qh_'
 
-ALLOWED_HOSTS = ['omegafoum.herokuapp.com']
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = ['omegafoam.herokuapp.com']
 
 EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
@@ -90,7 +91,10 @@ DATABASES = {
     }
 }
 
-
+# add this
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
