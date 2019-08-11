@@ -26,7 +26,7 @@ SECRET_KEY = 'tnur@5#_3zcoi^-u%1%wtsit2^08(a0-_$ig(2-0vfiq-&=qh_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['omegafoam.herokuapp.com']
+ALLOWED_HOSTS = ['omegafoum.herokuapp.com']
 
 EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
